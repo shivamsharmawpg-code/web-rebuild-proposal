@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "home",
+    "about",
+    "temples-deities",
+    "events",
+    "programs",
+    "services",
+    "donations-membership",
+    "facilities-volunteering",
+    "contact"
+  ],
+  "navigation": [
+    "global primary nav",
+    "contextual page actions",
+    "footer utility links"
+  ],
+  "sections": [
+    "hero",
+    "announcements",
+    "feature cards",
+    "calendar preview",
+    "service request summary",
+    "membership/donation actions",
+    "volunteer highlights",
+    "contact form",
+    "footer"
+  ],
+  "content_types": [
+    "short informational text",
+    "cards",
+    "status/alert banner",
+    "event list",
+    "form inputs",
+    "contact/location details"
+  ],
+  "user_flows": [
+    "visitor discovers temple info then checks upcoming events",
+    "member reviews programs then renews membership",
+    "donor views impact summary then contributes",
+    "volunteer reads opportunities then submits contact form"
+  ]
+}
