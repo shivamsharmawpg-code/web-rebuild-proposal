@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Sunrise Dharma Center</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+    <style>
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; }
+        .form-group input, .form-group textarea, .form-group select { 
+            width: 100%; 
+            padding: 0.8rem; 
+            border: 1px solid var(--color-border); 
+            border-radius: 12px; 
+            font-family: inherit;
+        }
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--color-primary);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper header-inner">
+            <a href="../index.html" class="brandmark">Sunrise Dharma Center</a>
+            <nav id="mainnav" class="site-nav">
+                <ul class="navlist">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about/index.html">About</a></li>
+                    <li><a href="../events/index.html">Events</a></li>
+                    <li><a href="../programs/index.html">Programs</a></li>
+                    <li><a href="../temples/index.html">Temples</a></li>
+                    <li><a href="../give/index.html">Give</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="wrapper layout">
+                <div class="animate-fade-up">
+                    <span class="kicker">Get in Touch</span>
+                    <h1>We're here to welcome you</h1>
+                    <p>Have questions about our programs, services, or how to get involved? Reach out to us and we'll get back to you soon.</p>
+                </div>
+                <aside class="panel animate-fade-up" style="animation-delay: 0.2s;">
+                    <h2>Visit Us</h2>
+                    <p>123 Temple Way, City, State 12345</p>
+                    <p>Open Daily: 7:00 AM - 8:00 PM</p>
+                    <p>Office Hours: Mon-Fri, 9:00 AM - 5:00 PM</p>
+                </aside>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrapper">
+                <div style="max-width: 800px; margin: 0 auto; background: white; padding: 3rem; border-radius: 24px; border: 1px solid var(--color-border);">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Inquiry Type</label>
+                            <select id="subject" name="subject">
+                                <option value="general">General Inquiry</option>
+                                <option value="programs">Programs & Classes</option>
+                                <option value="volunteer">Volunteering</option>
+                                <option value="donations">Donations</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="How can we help?"></textarea>
+                        </div>
+                        <button type="submit" class="button main" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer-bottom">
+                &copy; 2026 Sunrise Dharma Center. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/app.js"></script>
+</body>
+</html>
