@@ -1,0 +1,677 @@
+ <!DOCTYPE html>
+
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<meta content="no-cache, no-store, must-revalidate" http-equiv="Cache-Control"/>
+<meta content="0" http-equiv="Expires"/>
+<!-- favicon -->
+<link href="assets\apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57"/>
+<link href="assets\apple-icon-60x60.png" rel="apple-touch-icon" sizes="60x60"/>
+<link href="assets\apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"/>
+<link href="assets\apple-icon-76x76.png" rel="apple-touch-icon" sizes="76x76"/>
+<link href="assets\apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"/>
+<link href="assets\apple-icon-120x120.png" rel="apple-touch-icon" sizes="120x120"/>
+<link href="assets\apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144"/>
+<link href="assets\apple-icon-152x152.png" rel="apple-touch-icon" sizes="152x152"/>
+<link href="assets\apple-icon-180x180.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="assets\android-icon-192x192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="assets\favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="assets\favicon-96x96.png" rel="icon" sizes="96x96" type="image/png"/>
+<link href="assets\favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="assets\manifest.json" rel="manifest"/>
+<meta content="#ffffff" name="msapplication-TileColor"/>
+<meta content="https://www.hsmtemple.com/assets/images/favicon/ms-icon-144x144.png?version=877" name="msapplication-TileImage"/>
+<meta content="#ffffff" name="theme-color"/>
+<!-- Bootstrap CSS -->
+<link href="assets\bootstrap.min.css" media="all" rel="stylesheet"/>
+<link href="assets\style.css" rel="stylesheet">
+<link href="assets\responsive.css" rel="stylesheet">
+<link href="assets\bootstrap.min.css" rel="stylesheet">
+<link href="assets\swiper-bundle.min.css" rel="stylesheet">
+<link href="assets\ekiticons.css" rel="stylesheet">
+<!-- google fonts -->
+<style type="text/css">@font-face {font-family:Montserrat;font-style:normal;font-weight:100;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:100;src:url(/cf-fonts/v/montserrat/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:100;src:url(/cf-fonts/v/montserrat/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:100;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:100;src:url(/cf-fonts/v/montserrat/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:200;src:url(/cf-fonts/v/montserrat/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:200;src:url(/cf-fonts/v/montserrat/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:200;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:200;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:200;src:url(/cf-fonts/v/montserrat/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:300;src:url(/cf-fonts/v/montserrat/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:300;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:300;src:url(/cf-fonts/v/montserrat/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:300;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:300;src:url(/cf-fonts/v/montserrat/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:400;src:url(/cf-fonts/v/montserrat/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:400;src:url(/cf-fonts/v/montserrat/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:400;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:400;src:url(/cf-fonts/v/montserrat/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:400;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:500;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:500;src:url(/cf-fonts/v/montserrat/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:500;src:url(/cf-fonts/v/montserrat/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:500;src:url(/cf-fonts/v/montserrat/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:500;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:600;src:url(/cf-fonts/v/montserrat/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:600;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:600;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:600;src:url(/cf-fonts/v/montserrat/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:600;src:url(/cf-fonts/v/montserrat/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:700;src:url(/cf-fonts/v/montserrat/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:700;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:700;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:700;src:url(/cf-fonts/v/montserrat/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:700;src:url(/cf-fonts/v/montserrat/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:800;src:url(/cf-fonts/v/montserrat/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:800;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:800;src:url(/cf-fonts/v/montserrat/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:800;src:url(/cf-fonts/v/montserrat/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:800;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:900;src:url(/cf-fonts/v/montserrat/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:900;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:900;src:url(/cf-fonts/v/montserrat/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:900;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:900;src:url(/cf-fonts/v/montserrat/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Montserrat;font-style:italic;font-weight:400;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic/wght/italic.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Montserrat;font-style:italic;font-weight:400;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic-ext/wght/italic.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Montserrat;font-style:italic;font-weight:400;src:url(/cf-fonts/v/montserrat/5.0.16/vietnamese/wght/italic.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Montserrat;font-style:italic;font-weight:400;src:url(/cf-fonts/v/montserrat/5.0.16/latin/wght/italic.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Montserrat;font-style:italic;font-weight:400;src:url(/cf-fonts/v/montserrat/5.0.16/latin-ext/wght/italic.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:400;src:url(/cf-fonts/v/playfair-display/5.0.18/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:400;src:url(/cf-fonts/v/playfair-display/5.0.18/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:400;src:url(/cf-fonts/v/playfair-display/5.0.18/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:400;src:url(/cf-fonts/v/playfair-display/5.0.18/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:500;src:url(/cf-fonts/v/playfair-display/5.0.18/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:500;src:url(/cf-fonts/v/playfair-display/5.0.18/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:500;src:url(/cf-fonts/v/playfair-display/5.0.18/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:500;src:url(/cf-fonts/v/playfair-display/5.0.18/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:600;src:url(/cf-fonts/v/playfair-display/5.0.18/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:600;src:url(/cf-fonts/v/playfair-display/5.0.18/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:600;src:url(/cf-fonts/v/playfair-display/5.0.18/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:600;src:url(/cf-fonts/v/playfair-display/5.0.18/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:700;src:url(/cf-fonts/v/playfair-display/5.0.18/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:700;src:url(/cf-fonts/v/playfair-display/5.0.18/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:700;src:url(/cf-fonts/v/playfair-display/5.0.18/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:700;src:url(/cf-fonts/v/playfair-display/5.0.18/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:800;src:url(/cf-fonts/v/playfair-display/5.0.18/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:800;src:url(/cf-fonts/v/playfair-display/5.0.18/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:800;src:url(/cf-fonts/v/playfair-display/5.0.18/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:800;src:url(/cf-fonts/v/playfair-display/5.0.18/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:900;src:url(/cf-fonts/v/playfair-display/5.0.18/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:900;src:url(/cf-fonts/v/playfair-display/5.0.18/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:900;src:url(/cf-fonts/v/playfair-display/5.0.18/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:900;src:url(/cf-fonts/v/playfair-display/5.0.18/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Playfair Display;font-style:italic;font-weight:400;src:url(/cf-fonts/v/playfair-display/5.0.18/latin/wght/italic.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Playfair Display;font-style:italic;font-weight:400;src:url(/cf-fonts/v/playfair-display/5.0.18/vietnamese/wght/italic.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Playfair Display;font-style:italic;font-weight:400;src:url(/cf-fonts/v/playfair-display/5.0.18/cyrillic/wght/italic.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Playfair Display;font-style:italic;font-weight:400;src:url(/cf-fonts/v/playfair-display/5.0.18/latin-ext/wght/italic.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}</style>
+<!-- animate css -->
+<link href="assets\animate.min.css" rel="stylesheet">
+<link href="assets\magnific-popup.css" rel="stylesheet">
+<style type="text/css">@font-face {font-family:Tiro Devanagari Hindi;font-style:normal;font-weight:400;src:url(/cf-fonts/s/tiro-devanagari-hindi/5.0.11/devanagari/400/normal.woff2);unicode-range:U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF;font-display:swap;}@font-face {font-family:Tiro Devanagari Hindi;font-style:normal;font-weight:400;src:url(/cf-fonts/s/tiro-devanagari-hindi/5.0.11/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Tiro Devanagari Hindi;font-style:normal;font-weight:400;src:url(/cf-fonts/s/tiro-devanagari-hindi/5.0.11/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Tiro Devanagari Hindi;font-style:italic;font-weight:400;src:url(/cf-fonts/s/tiro-devanagari-hindi/5.0.11/latin-ext/400/italic.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Tiro Devanagari Hindi;font-style:italic;font-weight:400;src:url(/cf-fonts/s/tiro-devanagari-hindi/5.0.11/devanagari/400/italic.woff2);unicode-range:U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF;font-display:swap;}@font-face {font-family:Tiro Devanagari Hindi;font-style:italic;font-weight:400;src:url(/cf-fonts/s/tiro-devanagari-hindi/5.0.11/latin/400/italic.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}</style>
+<style type="text/css">
+    .error {
+        color: red !important;
+    }
+</style>
+<title>
+    About Us</title>
+<meta content="About Us" name="description"/>
+<meta content="About Us" name="keywords"/>
+<!-- Google tag (gtag.js) -->
+<script async="" src="assets\js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-D36HJXCEWV');
+</script>
+<script src="assets\jquery.min.js"></script>
+<script src="assets\jquery.blockUI.js"></script>
+<script>
+    $(document).ready(function() {
+        $('form').bind('submit', function() {
+            if ($(this).valid()) {
+                $.blockUI();
+            }
+        });
+    });
+</script>
+<script src="assets\jquery.validate.js"></script>
+<script src="assets\fontawesome.js"></script>
+<script src="assets\bootstrap.bundle.min.js"></script>
+<script src="assets\swiper-bundle.min.js"></script>
+<script src="assets\jquery.magnific-popup.min.js"></script>
+<script src="assets\jquery-input-mask-phone-number.js"></script>
+<script async="" defer="" src="assets\api.js"></script>
+<script>
+    var recaptcha1;
+    var recaptcha2;
+    var recaptcha3;
+    var myCallBack = function() {
+        //Render the recaptcha1 on the element with ID "recaptcha1"
+        recaptcha1 = grecaptcha.render('recaptcha1', {
+            'sitekey': '6LemX6YpAAAAADtO3mPCsdmaBHF8froG-0cgf8Os', //Replace this with your Site key
+            'theme': 'light',
+            'callback': 'check_captch',
+            'expired-callback': 'handleCaptchaExpired'
+        });
+
+        recaptcha2 = grecaptcha.render('recaptcha2', {
+            'sitekey': '6LemX6YpAAAAADtO3mPCsdmaBHF8froG-0cgf8Os', //Replace this with your Site key
+            'theme': 'light',
+            'callback': 'check_captch2',
+			'expired-callback': 'handleCaptchaExpired'
+        });
+        recaptcha3 = grecaptcha.render('recaptcha3', {
+            'sitekey': '6LemX6YpAAAAADtO3mPCsdmaBHF8froG-0cgf8Os', //Replace this with your Site key
+            'theme': 'light',
+            'callback': 'check_captch3'
+        });
+    };
+
+    var check_captch = function(response) {
+        $('#gRecaptchaResponse').val(response);
+        $('#gRecaptchaResponse').valid();
+    };
+    var check_captch2 = function(response) {
+        $('#gRecaptchaResponseSecond').val(response);
+        $('#gRecaptchaResponseSecond').valid();
+    };
+    var check_captch3 = function(response) {
+        $('#gRecaptchaResponseThird').val(response);
+        $('#gRecaptchaResponseThird').valid();
+    };
+
+    var handleCaptchaExpired = function() {
+        grecaptcha.reset();
+        grecaptcha.render('recaptcha1', {
+            'callback': 'check_captch'
+        });
+    }
+</script>
+<style type="text/css">
+		.section-content{
+			padding: 0px;
+		}
+		.section_y_pt{
+			padding: 50px 0px;
+		}
+	</style>
+</link></link></link></link></link></link></link></head>
+<body class="home">
+<div class="full-page" id="page">
+<header>
+<div class="container sticky">
+<!-- header html start -->
+<div class="d-flex align-items-center justify-content-between">
+<div class="brand_area">
+<a class="navbar-brand nlogoimg" href="https://www.hsmtemple.com/">
+<img alt="" src="assets\hsm-new-logo.svg"/>
+</a>
+</div>
+<div class="nav_area w-100">
+<div class="container-fluid containerfot">
+<div class="row">
+<div class="top_head_main">
+<div class="mobileheadadd">
+<p>Tamaso ma jyotirgamaya, From darkness lead me to light</p>
+</div>
+<ul class="nav justify-content-end head_bar_nav ms-auto">
+<li class="nav-item">
+<a aria-current="page" class="nav-link facebook_link" href="https://www.facebook.com/HinduSocietyOfManitoba/" target="_blank"><span class="fa-brands fa-facebook" style="color: #316FF6;"></span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link youtube_link" href="https://www.youtube.com/@HSM-mw4ec" target="_blank"><span class="fa-brands fa-youtube" style="color: #c4302b;"></span></a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container-fluid mob_none">
+<div class="row">
+<div class="borderset">
+<div class="divider w-100">
+<span class="divider-separator"></span>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class="container containerfot">
+<div class="row">
+<nav class="navbar navbar-expand-xl justify-content-between">
+<div class="sidebar" id="sidebar">
+<div class="MobileSidebarIcon">
+<a class="navbar-brand nlogoimg" href="#">
+<img alt="" src="assets\hsm-new-logo.svg"/>
+</a>
+<button class="btn" onclick="cancelsidebar()" style="font-size: 20px;" type="button">
+<span><i class="fa fa-times"></i></span>
+</button>
+</div>
+<ul class="navbar-nav" id="main-menu">
+<li class="nav-item">
+<a class="nav-link" href="https://www.hsmtemple.com/home" target="_self">
+														Home													</a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link" href="https://www.hsmtemple.com/about-us" target="_self">
+														About Us													</a>
+<ul class="dropdown-menu drop_set">
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/our-mission" target="_self">
+																			Our Mission																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/our-history" target="_self">
+																			Our History																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/our-team" target="_self">
+																			Board Members																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/how-to-dontate" target="_self">
+																			How to Dontate																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/memberships" target="_self">
+																			Memberships																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/policies-and-guidlines" target="_self">
+																			Policies and Guidlines																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/past-presidents-and-chairperson-of-trustees" target="_self">
+																			Past Presidents/Trustees																		</a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link" href="https://www.hsmtemple.com/our-temple" target="_self">
+														Our Temple													</a>
+<ul class="dropdown-menu drop_set">
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/deities-at-our-temples" target="_self">
+																			Deities at our Temples																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/temple-etiquette" target="_self">
+																			Temple Etiquette																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/priti-bhoj-hosting" target="_self">
+																			Priti Bhoj Hosting																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/facilities-at-temples" target="_self">
+																			Facilities at Temples																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/volunteering-at-temple" target="_self">
+																			Volunteering at Temple																		</a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link" href="javascript:;" target="_self">
+														Services													</a>
+<ul class="dropdown-menu drop_set">
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/vidya-bhavan" target="_self">
+																			Vidya Bhavan																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/our-priests-services" target="_self">
+																			Our Priests &amp; Services																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/product" target="_self">
+																			Library																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/seniors-wellness-and-yoga-classes" target="_self">
+																			Wellness Initative																		</a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link" href="javascript:;" target="_self">
+														News &amp; Events													</a>
+<ul class="dropdown-menu drop_set">
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/our-event" target="_self">
+																			Our Events																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/blog" target="_self">
+																			News &amp; Blogs																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/our-facebook-post" target="_self">
+																			Facebook Posts																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/faqs" target="_self">
+																			FAQs																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/photo-gallery" target="_self">
+																			Photo / Video Gallery																		</a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link" href="javascript:;" target="_self">
+														Registration													</a>
+<ul class="dropdown-menu drop_set">
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/registration" target="_self">
+																			Vidya Bhavan																		</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://www.hsmtemple.com/contact-us" target="_self">
+														Contact Us													</a>
+</li>
+</ul>
+</div>
+<div class="d-flex mob-btn">
+<button class="toggle" id="toggle" type="button">
+<span><i class="fa-solid fa-bars"></i></span>
+</button>
+<form class="form-inline ml-auto">
+<a class="full_v" href="https://donation.hsmtemple.com/member-login" style="font-weight:500;" target="_blank"><i aria-hidden="true" class="fas fa-user"></i> Log In</a>
+<!--<a target="_blank" href="https://www.paypal.com/ca/fundraiser/charity/3439065" class="donate_btn full_v">Donate Now</a>-->
+<a class="donate_btn full_v" href="https://donation.hsmtemple.com/donate">Donate Now</a>
+<!-- <a target="_blank" href="https://www.paypal.com/ca/fundraiser/charity/3439065" class=" mobile_v"><img src="https://www.hsmtemple.com/assets/images/donate-now2.png" style="width:27px;height:27px;"></a> -->
+<a class="mobile_v" href="https://donation.hsmtemple.com/member-login" style="padding: 0px 5px !important; font-size: 13px !important; font-weight:500; border-radius: 50px !important; margin-bottom:5px;" target="_blank"><i aria-hidden="true" class="fas fa-user"></i> Log In</a>
+<a class="donate_btn mobile_v" href="https://donation.hsmtemple.com/donate" style="padding: 8px 14px !important; font-size: 13px !important;border-radius: 50px !important;">Donate</a>
+</form>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<style>
+	.donate_btn {padding:12px 20px !important;}
+	@media (min-width: 1200px) {
+		.navbar-expand-xl .navbar-nav .nav-link {
+			padding-right: 0.2rem;
+			padding-left: .2rem;
+		}
+	}
+</style>
+<script>
+	$(window).scroll(function() {
+		if ($(window).scrollTop() >= 100) {
+			$('header').addClass('fixed-header');
+		} else {
+			$('header').removeClass('fixed-header');
+		}
+	});
+
+	var btn = document.querySelector('.toggle');
+	var btnst = true;
+	btn.onclick = function() {
+		if (btnst == true) {
+			document.querySelector('.toggle span').classList.add('toggle');
+			document.getElementById('sidebar').classList.add('sidebarshow');
+			btnst = false;
+		} else if (btnst == false) {
+			document.querySelector('.toggle span').classList.remove('toggle');
+			document.getElementById('sidebar').classList.remove('sidebarshow');
+			btnst = true;
+		}
+	}
+
+	function cancelsidebar() {
+		if (btnst == false) {
+			document.querySelector('.toggle span').classList.remove('toggle');
+			document.getElementById('sidebar').classList.remove('sidebarshow');
+			btnst = true;
+		}
+	}
+</script> </header>
+<main class="site-main">
+<!-- Inner Banner html start-->
+<div class="container-fluid">
+<div class="row">
+<div class="inner_header" style="background-image: url('https://www.hsmtemple.com/assets/images/hindu_mandir_banner_default.webp')">
+<div class="innerhead_wrap">
+<h1>About Us</h1>
+</div>
+</div>
+</div>
+</div> <!-- <style>
+#< ?php echo $sectiondivID?> p a {color:< ?php if($sectionResult->linkColor == 1) { echo $sectionResult->linkColorCustom; } else { echo '#003F54'; }?> !important;}
+#< ?php echo $sectiondivID?> p a:hover {color:< ?php if($sectionResult->linkHoverColor == 1) { echo $sectionResult->linkHoverColorCustom; } else { echo $sectionResult->linkHoverColor; }?>  !important;}
+</style> -->
+<section class="section-content" id="section_184">
+<div class="overview section-50-py #0000FF sectionmargin" data-wow-duration="0.5s" id="about-us" style=" background-image:url(https://www.hsmtemple.com/upload/category/Bg_l01.png) !important; color:#000000;">
+<div class="container">
+<div class="row">
+<div class="col-lg-7 col-sm-12 col-sm-12">
+<h3><h2 class="animate__animated animate__fadeInRight" style="color: #212529!important;">Message from the Hindu Society of Manitoba</h2></h3>
+<p> </p>
+<p><strong>Dear Devotees, Community Members and Visitors,</strong></p>
+<p> </p>
+<p>The Hindu Society of Manitoba (HSM) is a not-for-profit organization engaged in promoting the Hindu religion and culture. Established in 1970, our organization runs and operates two Temples and Cultural Hall facilities located at 854 Ellice Ave and 999 St. Annes Road in Winnipeg Manitoba. These facilities are managed by two Management Committees who oversee the day-to-day operations and the affairs of the society are managed by the Board of Governors,all of which are made up of volunteers.</p>
+<p> </p>
+<p>Our centers serve as vibrant hubs of activity, fostering community engagement and spiritual growth.</p>
+<p style="text-align: left;"> </p>
+<p>In addition to our facilities, The Hindu Society of Manitoba offersa number of activities for our members and the community to participate in:</p>
+<p style="text-align: left;"> </p>
+<ul>
+<li style="text-align: left;"><strong>Vidhya Bhavan</strong> language school and arts classes: providing a platform for learning and preserving our cultural activity.</li>
+</ul>
+<p style="text-align: left;"> </p>
+<ul style="text-align: left;">
+<li><strong>Math Classes:</strong> Equipping our youth with the essential mathematical skills, these classes nurture academic excellence and critical thinking and are ran by volunteer university math professors and students.</li>
+</ul>
+<p style="text-align: left;"> </p>
+<ul style="text-align: left;">
+<li><strong>Senior Wellness &amp; Yoga Program:</strong> Every Thursday, we prioritize the well-being of our seniors through a dedicated wellness program, promoting physical health and social connectivity.</li>
+</ul>
+<p style="text-align: left;"> </p>
+<ul style="text-align: left;">
+<li><strong>Badminton and Pickleball:</strong> Sports enthusiasts of all ages can participate in badminton and pickle ball sessions throughout the week.</li>
+</ul>
+<p style="text-align: left;"> </p>
+<ul>
+<li style="text-align: left;"><strong>Library:</strong> Our library serves as a treasure trove of knowledge; housing a diverse collection of books, periodicals, and resources covering various aspects of Hinduism, literature, history, and more.</li>
+</ul>
+<p style="text-align: left;"> </p>
+<p>We undertook a major renovation on the temple located at 854 Ellice Avenue. The renovation has been a labour of love, with careful attention paid to preserving the sacredness and the beauty of our temple while modernizing the facility to serve our community.</p>
+<p style="text-align: left;"> </p>
+<p>We have witnessed a significant increase in participation and engagement in our temple and cultural activities. Your enthusiasm and dedication have been inspiring, and it is a testament to the vibrant spirit of our community.</p>
+<p style="text-align: left;"> </p>
+<p>At HSM, we are committed to fostering inclusiveness and embracing the diversity that enriches our society. Together we can continue to promote a culture of inclusivity and ensure that everyone feels welcome and respected within our society. Our organization remains united in our shared goals and values.</p>
+<p style="text-align: left;"> </p>
+<p>We continue to encourage all the youth and young members to become involved and join us in our community’s activities and initiatives. You are the future of our organization and your involvement and engagement are critical to the success of the organization.</p>
+<p style="text-align: left;"> </p>
+<p>Thank you to all of the community members for your ongoing participation and engagement in the Hindu Society of Manitoba. With your support, we have achieved remarkable milestones, and we are confident that together we will continue to build on our successes.</p>
+<p> </p>
+<p><strong><span style="font-size: 14pt;">Hindu Society of Manitoba</span></strong></p> </div>
+<div class="col-lg-5 col-sm-12">
+<div class="carousel slide" data-bs-ride="carousel" id="carouselAboutSlidesOnly">
+<div class="carousel-inner">
+<div class="carousel-item active" data-bs-interval="3000" id="active1">
+<div style="height: 400px;"><img alt="" class="w-100 h-100 carousel-img home_about_img" src="assets\tample_about.jpg"/></div>
+</div>
+<div class="carousel-item" data-bs-interval="3000" id="active2">
+<div style="height: 400px;"><img alt="" class="w-100 h-100 carousel-img home_about_img" src="assets\Hindu-Temple-and-Cultural-Centre1 (2).jpg"/></div>
+</div>
+</div>
+</div>
+<p> </p>
+<center><a class="donate_btn mt-3 mb-5 d-block" href="https://www.hsmtemple.com/our-team" style="width: fit-content;">Our Board Members</a></center> </div>
+</div>
+</div>
+</div>
+</section> </main>
+<div class="container-fluid" data-aos="zoom-in">
+<div class="row">
+<div class="newslatter_details">
+<div class="container containerfot text-center">
+<div class="row">
+<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+<div class="newslatter_wrap">
+<p>Newsletter</p>
+<h2>Subscribe For Updates</h2>
+<div class="my-3">
+<span>
+<p>Subscribe to our newsletters for latest event and updates about HSM initiatives</p>
+</span>
+</div>
+</div>
+<div class="wdt-newslatter-wrapper" id="#newsletter">
+<script>
+    $(".alert").fadeTo(8000, 8000).slideUp(8000, function() {
+        $(".alert").slideUp(8000);
+    });
+</script> <form action="https://www.hsmtemple.com/action/newsletter" class="newslatter-subscribe-form" id="frm_newsletter" method="post" name="frm_newsletter">
+<input class="form-control" name="backTo" type="hidden" value="home"/>
+<div class="news">
+<div class="m-3">
+<input maxlength="30" name="subscriberEmail" placeholder="Your email address" type="text"/>
+<label class="error" for="subscriberEmail" generated="true"></label>
+</div>
+<div class="m-2">
+<div class="g-recaptcha" data-sitekey="6LemX6YpAAAAADtO3mPCsdmaBHF8froG-0cgf8Os" id="recaptcha1"></div>
+<div id="gcaptchamsg" style="color:red; font-size: 13px;"></div>
+<label style="width:100%;"><label class="error" for="gRecaptchaResponse" generated="true"></label></label>
+<div class="contactusCaptchaMsg"></div>
+<input class="gRecaptchaResponse required" id="gRecaptchaResponse" name="gRecaptchaResponse" type="hidden"/>
+<label class="error" for="g-recaptcha" generated="true"></label>
+</div>
+<div class="m-3">
+<div class="newslatter-subscription-button-holder">
+<button class="donate_btn" name="wdt_mc_submit" type="submit">
+<span>Subscribe</span> <i aria-hidden="true" class="fas fa-arrow-right"></i>
+</button>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+<!-- <div class="col-12 col-sm-12 col-md-4 col-lg-3"></div> -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- END NEWS LATTER --> <style type="text/css">
+	.footer_logo img {
+    width: 120px;
+    height: auto;
+}
+</style>
+<!-- START FOOTER -->
+<div class="container-fluid p-0">
+<div class="footer_set">
+<div class="opacity_set"></div>
+<div class="container containerfot footer_bg_set white">
+<div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+<div class="col mb-4">
+<div class="footer_wrap">
+<div class="mb-10">
+<h2>Temple Hours</h2>
+</div>
+<div class="mb-3">
+<p><strong><span style="color: #34495e;">Hindu Temple &amp; Dr. Raj Pandey Hindu Centre</span></strong></p>
+<p>999 St. Anne’s Road, Winnipeg, MB, R2N 4G5.</p>
+<p>Mon-Sat : <br/>9:00am – 12:00pm | 10:00am – 12:00pm Puja <br/>6:00pm – 08:00pm</p>
+<p>Sunday :<span class="Apple-converted-space">  <br/></span>10:00 am – 7:00 pm</p> </div>
+<div class="mb-3">
+<p><strong><span style="color: #236fa1;">Hindu Temple &amp; Cultural Centre</span></strong></p>
+<p>854 Ellice Avenue, Winnipeg, MB, R3G 0C5.</p>
+<p>Mon - Sat: <br/>9:00 am – 11:00 am<span class="Apple-converted-space"><br/></span>6:00 pm – 08:00 pm</p>
+<p>Sunday : <br/>10:00am – 12:00pm<br/>Evening: Closed</p> </div>
+</div>
+</div>
+<div class="col mb-4">
+<div class="footer_wrap text-lg-center">
+<div class="footer_logo mb-10">
+<a href="https://www.hsmtemple.com/"><img alt="" src="assets\hsm-new-logo.svg"/></a>
+</div>
+<div class="text-lg-center">
+<p>
+<p>Our vision through this website is to facilitate communication, events planning and better implementation of our programs. We can accomplish a lot together as a community and this can add to our success in promoting Hindu religion and culture in Manitoba.</p> </p>
+</div>
+<div class="hsm">
+<ul class="hsm_iconset">
+<li>
+<a class="social-media" href="https://www.facebook.com/HinduSocietyOfManitoba/" target="_blank" title="Facebook">
+<i aria-hidden="true" class="fa-brands fa-facebook"></i>
+</a>
+</li>
+<li>
+<a class="social-media" href="https://www.youtube.com/@HSM-mw4ec" target="_blank" title="Youtube Channel">
+<i aria-hidden="true" class="fa-brands fa-youtube"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="footer_wrap footer_right">
+<div class="mb-10">
+<h2>Useful Links</h2>
+</div>
+<div class="usefull">
+<ul class="mobile">
+<li>
+<a href="https://www.hsmtemple.com/our-team"><span class="">Board Members</span></a>
+</li>
+<li>
+<a href="https://www.hsmtemple.com/booking"><span class="">Booking </span></a>
+</li>
+<li>
+<a href="https://www.hsmtemple.com/vidya-bhavan"><span class="">Vidya Bhavan </span></a>
+</li>
+<li>
+<a href="https://www.hsmtemple.com/product"><span class="">⁠Library </span></a>
+</li>
+<li>
+<a href="https://www.hsmtemple.com/our-event"><span class="">Events</span></a>
+</li>
+<li>
+<a href="https://www.hsmtemple.com/blog"><span class="">News and Blogs</span></a>
+</li>
+<li>
+<a href="https://www.hsmtemple.com/facilities-at-temples"><span class="">Facilities</span></a>
+</li>
+<li>
+<a href="https://www.hsmtemple.com/contact-us"><span class="">Contact Us</span></a>
+</li>
+<li hidden="" style="opacity:0">
+<a hidden="" href="https://www.hsmtemple.com/seo-clients" style="opacity:0"><span class="">Web Resources</span></a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div>
+<hr/>
+</div>
+<div class="copy_right">
+<div>©2025 Hindu Society of Manitoba. All Rights Reserved</div>
+<div><a href="https://www.hrinfocare.com/" style="color:white!important;" target="_blank">Developed By Hrinfocare - Web And Digital Marketing</a></div>
+</div>
+</div>
+</div>
+</div>
+<!-- END FOOTER -->
+<div class="modal testimonial-modal">
+<div class="modal-dialog modal-dialog-centered modal-lg">
+<div class="modal-content testimonialDetailDiv">
+</div>
+</div>
+</div>
+<!-- header html end -->
+<script type="text/javascript">
+	function fun_testimonialsDetail(testimonialsID) {
+		$("#loading").fadeIn(300);
+		$.ajax({
+			type: "POST",
+			url: "https://www.hsmtemple.com/ajax/testimonialsDetail",
+			data: "testimonialsID=" + testimonialsID,
+			success: function(result) {
+				$('.testimonial-modal').modal({
+					backdrop: 'static',
+					keyboard: false
+				});
+				$('.testimonial-modal').modal('show');
+				$('.testimonialDetailDiv').html(result);
+				$("#loading").fadeOut(300);
+			}
+		});
+	}
+</script>
+<script type="text/javascript">
+		$(document).ready(function () {
+        $.validator.setDefaults({
+            submitHandler: function () {
+                if (grecaptcha.getResponse() == '') {
+                    $.unblockUI();
+                } else {
+                    document.frm_newsletter.submit();
+                }
+            }
+        });
+
+        $("#frm_newsletter").validate({
+            rules: {
+                subscriberEmail: {
+                    required: true,
+                    email: true
+                },
+                gRecaptchaResponse: {
+                    required: true
+                },
+            },
+            messages: {
+                subscriberEmail: {
+                    required: "Please enter an email address.",
+                    email: "Please enter a valid email address."
+                },
+                gRecaptchaResponse: {
+                    required: "Please select a captcha."
+                },
+            }
+        });
+    });
+	</script>
+<link href="assets\aos.css" rel="stylesheet"/>
+<script src="assets\aos.js"></script>
+<script>
+  AOS.init({
+	easing: 'ease-in-out-sine'
+  });
+</script>
+<script rel="stylesheet" src="assets\bootstrap.bundle.min.js"></script>
+<script rel="stylesheet" src="assets\fontawesome.js"></script>
+<script rel="stylesheet" src="assets\wow.min.js"></script>
+</div>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9f60efe13f589d3e',t:'MTc3NzgyODgzMw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
