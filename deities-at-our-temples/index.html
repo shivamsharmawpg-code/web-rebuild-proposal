@@ -1,0 +1,868 @@
+ <!DOCTYPE html>
+
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<meta content="no-cache, no-store, must-revalidate" http-equiv="Cache-Control"/>
+<meta content="0" http-equiv="Expires"/>
+<!-- favicon -->
+<link href="assets\apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57"/>
+<link href="assets\apple-icon-60x60.png" rel="apple-touch-icon" sizes="60x60"/>
+<link href="assets\apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"/>
+<link href="assets\apple-icon-76x76.png" rel="apple-touch-icon" sizes="76x76"/>
+<link href="assets\apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"/>
+<link href="assets\apple-icon-120x120.png" rel="apple-touch-icon" sizes="120x120"/>
+<link href="assets\apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144"/>
+<link href="assets\apple-icon-152x152.png" rel="apple-touch-icon" sizes="152x152"/>
+<link href="assets\apple-icon-180x180.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="assets\android-icon-192x192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="assets\favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="assets\favicon-96x96.png" rel="icon" sizes="96x96" type="image/png"/>
+<link href="assets\favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="assets\manifest.json" rel="manifest"/>
+<meta content="#ffffff" name="msapplication-TileColor"/>
+<meta content="https://www.hsmtemple.com/assets/images/favicon/ms-icon-144x144.png?version=877" name="msapplication-TileImage"/>
+<meta content="#ffffff" name="theme-color"/>
+<!-- Bootstrap CSS -->
+<link href="assets\bootstrap.min.css" media="all" rel="stylesheet"/>
+<link href="assets\style.css" rel="stylesheet">
+<link href="assets\responsive.css" rel="stylesheet">
+<link href="assets\bootstrap.min.css" rel="stylesheet">
+<link href="assets\swiper-bundle.min.css" rel="stylesheet">
+<link href="assets\ekiticons.css" rel="stylesheet">
+<!-- google fonts -->
+<style type="text/css">@font-face {font-family:Montserrat;font-style:normal;font-weight:100;src:url(/cf-fonts/v/montserrat/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:100;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:100;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:100;src:url(/cf-fonts/v/montserrat/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:100;src:url(/cf-fonts/v/montserrat/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:200;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:200;src:url(/cf-fonts/v/montserrat/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:200;src:url(/cf-fonts/v/montserrat/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:200;src:url(/cf-fonts/v/montserrat/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:200;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:300;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:300;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:300;src:url(/cf-fonts/v/montserrat/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:300;src:url(/cf-fonts/v/montserrat/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:300;src:url(/cf-fonts/v/montserrat/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:400;src:url(/cf-fonts/v/montserrat/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:400;src:url(/cf-fonts/v/montserrat/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:400;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:400;src:url(/cf-fonts/v/montserrat/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:400;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:500;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:500;src:url(/cf-fonts/v/montserrat/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:500;src:url(/cf-fonts/v/montserrat/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:500;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:500;src:url(/cf-fonts/v/montserrat/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:600;src:url(/cf-fonts/v/montserrat/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:600;src:url(/cf-fonts/v/montserrat/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:600;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:600;src:url(/cf-fonts/v/montserrat/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:600;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:700;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:700;src:url(/cf-fonts/v/montserrat/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:700;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:700;src:url(/cf-fonts/v/montserrat/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:700;src:url(/cf-fonts/v/montserrat/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:800;src:url(/cf-fonts/v/montserrat/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:800;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:800;src:url(/cf-fonts/v/montserrat/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:800;src:url(/cf-fonts/v/montserrat/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:800;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:900;src:url(/cf-fonts/v/montserrat/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:900;src:url(/cf-fonts/v/montserrat/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:900;src:url(/cf-fonts/v/montserrat/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:900;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:900;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Montserrat;font-style:italic;font-weight:400;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic-ext/wght/italic.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Montserrat;font-style:italic;font-weight:400;src:url(/cf-fonts/v/montserrat/5.0.16/vietnamese/wght/italic.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Montserrat;font-style:italic;font-weight:400;src:url(/cf-fonts/v/montserrat/5.0.16/latin/wght/italic.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Montserrat;font-style:italic;font-weight:400;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic/wght/italic.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Montserrat;font-style:italic;font-weight:400;src:url(/cf-fonts/v/montserrat/5.0.16/latin-ext/wght/italic.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:400;src:url(/cf-fonts/v/playfair-display/5.0.18/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:400;src:url(/cf-fonts/v/playfair-display/5.0.18/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:400;src:url(/cf-fonts/v/playfair-display/5.0.18/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:400;src:url(/cf-fonts/v/playfair-display/5.0.18/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:500;src:url(/cf-fonts/v/playfair-display/5.0.18/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:500;src:url(/cf-fonts/v/playfair-display/5.0.18/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:500;src:url(/cf-fonts/v/playfair-display/5.0.18/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:500;src:url(/cf-fonts/v/playfair-display/5.0.18/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:600;src:url(/cf-fonts/v/playfair-display/5.0.18/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:600;src:url(/cf-fonts/v/playfair-display/5.0.18/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:600;src:url(/cf-fonts/v/playfair-display/5.0.18/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:600;src:url(/cf-fonts/v/playfair-display/5.0.18/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:700;src:url(/cf-fonts/v/playfair-display/5.0.18/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:700;src:url(/cf-fonts/v/playfair-display/5.0.18/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:700;src:url(/cf-fonts/v/playfair-display/5.0.18/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:700;src:url(/cf-fonts/v/playfair-display/5.0.18/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:800;src:url(/cf-fonts/v/playfair-display/5.0.18/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:800;src:url(/cf-fonts/v/playfair-display/5.0.18/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:800;src:url(/cf-fonts/v/playfair-display/5.0.18/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:800;src:url(/cf-fonts/v/playfair-display/5.0.18/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:900;src:url(/cf-fonts/v/playfair-display/5.0.18/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:900;src:url(/cf-fonts/v/playfair-display/5.0.18/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:900;src:url(/cf-fonts/v/playfair-display/5.0.18/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Playfair Display;font-style:normal;font-weight:900;src:url(/cf-fonts/v/playfair-display/5.0.18/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Playfair Display;font-style:italic;font-weight:400;src:url(/cf-fonts/v/playfair-display/5.0.18/cyrillic/wght/italic.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Playfair Display;font-style:italic;font-weight:400;src:url(/cf-fonts/v/playfair-display/5.0.18/latin/wght/italic.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Playfair Display;font-style:italic;font-weight:400;src:url(/cf-fonts/v/playfair-display/5.0.18/latin-ext/wght/italic.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Playfair Display;font-style:italic;font-weight:400;src:url(/cf-fonts/v/playfair-display/5.0.18/vietnamese/wght/italic.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}</style>
+<!-- animate css -->
+<link href="assets\animate.min.css" rel="stylesheet">
+<link href="assets\magnific-popup.css" rel="stylesheet">
+<style type="text/css">@font-face {font-family:Tiro Devanagari Hindi;font-style:normal;font-weight:400;src:url(/cf-fonts/s/tiro-devanagari-hindi/5.0.11/devanagari/400/normal.woff2);unicode-range:U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF;font-display:swap;}@font-face {font-family:Tiro Devanagari Hindi;font-style:normal;font-weight:400;src:url(/cf-fonts/s/tiro-devanagari-hindi/5.0.11/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Tiro Devanagari Hindi;font-style:normal;font-weight:400;src:url(/cf-fonts/s/tiro-devanagari-hindi/5.0.11/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Tiro Devanagari Hindi;font-style:italic;font-weight:400;src:url(/cf-fonts/s/tiro-devanagari-hindi/5.0.11/latin/400/italic.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Tiro Devanagari Hindi;font-style:italic;font-weight:400;src:url(/cf-fonts/s/tiro-devanagari-hindi/5.0.11/devanagari/400/italic.woff2);unicode-range:U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF;font-display:swap;}@font-face {font-family:Tiro Devanagari Hindi;font-style:italic;font-weight:400;src:url(/cf-fonts/s/tiro-devanagari-hindi/5.0.11/latin-ext/400/italic.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}</style>
+<style type="text/css">
+    .error {
+        color: red !important;
+    }
+</style>
+<title>
+    Deities At Our Temples</title>
+<meta content="Deities At Our Temples" name="description"/>
+<meta content="Deities At Our Temples" name="keywords"/>
+<!-- Google tag (gtag.js) -->
+<script async="" src="assets\js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-D36HJXCEWV');
+</script>
+<script src="assets\jquery.min.js"></script>
+<script src="assets\jquery.blockUI.js"></script>
+<script>
+    $(document).ready(function() {
+        $('form').bind('submit', function() {
+            if ($(this).valid()) {
+                $.blockUI();
+            }
+        });
+    });
+</script>
+<script src="assets\jquery.validate.js"></script>
+<script src="assets\fontawesome.js"></script>
+<script src="assets\bootstrap.bundle.min.js"></script>
+<script src="assets\swiper-bundle.min.js"></script>
+<script src="assets\jquery.magnific-popup.min.js"></script>
+<script src="assets\jquery-input-mask-phone-number.js"></script>
+<script async="" defer="" src="assets\api.js"></script>
+<script>
+    var recaptcha1;
+    var recaptcha2;
+    var recaptcha3;
+    var myCallBack = function() {
+        //Render the recaptcha1 on the element with ID "recaptcha1"
+        recaptcha1 = grecaptcha.render('recaptcha1', {
+            'sitekey': '6LemX6YpAAAAADtO3mPCsdmaBHF8froG-0cgf8Os', //Replace this with your Site key
+            'theme': 'light',
+            'callback': 'check_captch',
+            'expired-callback': 'handleCaptchaExpired'
+        });
+
+        recaptcha2 = grecaptcha.render('recaptcha2', {
+            'sitekey': '6LemX6YpAAAAADtO3mPCsdmaBHF8froG-0cgf8Os', //Replace this with your Site key
+            'theme': 'light',
+            'callback': 'check_captch2',
+			'expired-callback': 'handleCaptchaExpired'
+        });
+        recaptcha3 = grecaptcha.render('recaptcha3', {
+            'sitekey': '6LemX6YpAAAAADtO3mPCsdmaBHF8froG-0cgf8Os', //Replace this with your Site key
+            'theme': 'light',
+            'callback': 'check_captch3'
+        });
+    };
+
+    var check_captch = function(response) {
+        $('#gRecaptchaResponse').val(response);
+        $('#gRecaptchaResponse').valid();
+    };
+    var check_captch2 = function(response) {
+        $('#gRecaptchaResponseSecond').val(response);
+        $('#gRecaptchaResponseSecond').valid();
+    };
+    var check_captch3 = function(response) {
+        $('#gRecaptchaResponseThird').val(response);
+        $('#gRecaptchaResponseThird').valid();
+    };
+
+    var handleCaptchaExpired = function() {
+        grecaptcha.reset();
+        grecaptcha.render('recaptcha1', {
+            'callback': 'check_captch'
+        });
+    }
+</script>
+<style type="text/css">
+		.section-content{
+			padding: 0px;
+		}
+		.section_y_pt{
+			padding: 50px 0px;
+		}
+	</style>
+</link></link></link></link></link></link></link></head>
+<body class="home">
+<div class="full-page" id="page">
+<header>
+<div class="container sticky">
+<!-- header html start -->
+<div class="d-flex align-items-center justify-content-between">
+<div class="brand_area">
+<a class="navbar-brand nlogoimg" href="https://www.hsmtemple.com/">
+<img alt="" src="assets\hsm-new-logo.svg"/>
+</a>
+</div>
+<div class="nav_area w-100">
+<div class="container-fluid containerfot">
+<div class="row">
+<div class="top_head_main">
+<div class="mobileheadadd">
+<p>Tamaso ma jyotirgamaya, From darkness lead me to light</p>
+</div>
+<ul class="nav justify-content-end head_bar_nav ms-auto">
+<li class="nav-item">
+<a aria-current="page" class="nav-link facebook_link" href="https://www.facebook.com/HinduSocietyOfManitoba/" target="_blank"><span class="fa-brands fa-facebook" style="color: #316FF6;"></span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link youtube_link" href="https://www.youtube.com/@HSM-mw4ec" target="_blank"><span class="fa-brands fa-youtube" style="color: #c4302b;"></span></a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container-fluid mob_none">
+<div class="row">
+<div class="borderset">
+<div class="divider w-100">
+<span class="divider-separator"></span>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class="container containerfot">
+<div class="row">
+<nav class="navbar navbar-expand-xl justify-content-between">
+<div class="sidebar" id="sidebar">
+<div class="MobileSidebarIcon">
+<a class="navbar-brand nlogoimg" href="#">
+<img alt="" src="assets\hsm-new-logo.svg"/>
+</a>
+<button class="btn" onclick="cancelsidebar()" style="font-size: 20px;" type="button">
+<span><i class="fa fa-times"></i></span>
+</button>
+</div>
+<ul class="navbar-nav" id="main-menu">
+<li class="nav-item">
+<a class="nav-link" href="https://www.hsmtemple.com/home" target="_self">
+														Home													</a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link" href="https://www.hsmtemple.com/about-us" target="_self">
+														About Us													</a>
+<ul class="dropdown-menu drop_set">
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/our-mission" target="_self">
+																			Our Mission																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/our-history" target="_self">
+																			Our History																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/our-team" target="_self">
+																			Board Members																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/how-to-dontate" target="_self">
+																			How to Dontate																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/memberships" target="_self">
+																			Memberships																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/policies-and-guidlines" target="_self">
+																			Policies and Guidlines																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/past-presidents-and-chairperson-of-trustees" target="_self">
+																			Past Presidents/Trustees																		</a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link" href="https://www.hsmtemple.com/our-temple" target="_self">
+														Our Temple													</a>
+<ul class="dropdown-menu drop_set">
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/deities-at-our-temples" target="_self">
+																			Deities at our Temples																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/temple-etiquette" target="_self">
+																			Temple Etiquette																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/priti-bhoj-hosting" target="_self">
+																			Priti Bhoj Hosting																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/facilities-at-temples" target="_self">
+																			Facilities at Temples																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/volunteering-at-temple" target="_self">
+																			Volunteering at Temple																		</a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link" href="javascript:;" target="_self">
+														Services													</a>
+<ul class="dropdown-menu drop_set">
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/vidya-bhavan" target="_self">
+																			Vidya Bhavan																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/our-priests-services" target="_self">
+																			Our Priests &amp; Services																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/product" target="_self">
+																			Library																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/seniors-wellness-and-yoga-classes" target="_self">
+																			Wellness Initative																		</a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link" href="javascript:;" target="_self">
+														News &amp; Events													</a>
+<ul class="dropdown-menu drop_set">
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/our-event" target="_self">
+																			Our Events																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/blog" target="_self">
+																			News &amp; Blogs																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/our-facebook-post" target="_self">
+																			Facebook Posts																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/faqs" target="_self">
+																			FAQs																		</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/photo-gallery" target="_self">
+																			Photo / Video Gallery																		</a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link" href="javascript:;" target="_self">
+														Registration													</a>
+<ul class="dropdown-menu drop_set">
+<li class="dropdown">
+<a class="dropdown-item" href="https://www.hsmtemple.com/registration" target="_self">
+																			Vidya Bhavan																		</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://www.hsmtemple.com/contact-us" target="_self">
+														Contact Us													</a>
+</li>
+</ul>
+</div>
+<div class="d-flex mob-btn">
+<button class="toggle" id="toggle" type="button">
+<span><i class="fa-solid fa-bars"></i></span>
+</button>
+<form class="form-inline ml-auto">
+<a class="full_v" href="https://donation.hsmtemple.com/member-login" style="font-weight:500;" target="_blank"><i aria-hidden="true" class="fas fa-user"></i> Log In</a>
+<!--<a target="_blank" href="https://www.paypal.com/ca/fundraiser/charity/3439065" class="donate_btn full_v">Donate Now</a>-->
+<a class="donate_btn full_v" href="https://donation.hsmtemple.com/donate">Donate Now</a>
+<!-- <a target="_blank" href="https://www.paypal.com/ca/fundraiser/charity/3439065" class=" mobile_v"><img src="https://www.hsmtemple.com/assets/images/donate-now2.png" style="width:27px;height:27px;"></a> -->
+<a class="mobile_v" href="https://donation.hsmtemple.com/member-login" style="padding: 0px 5px !important; font-size: 13px !important; font-weight:500; border-radius: 50px !important; margin-bottom:5px;" target="_blank"><i aria-hidden="true" class="fas fa-user"></i> Log In</a>
+<a class="donate_btn mobile_v" href="https://donation.hsmtemple.com/donate" style="padding: 8px 14px !important; font-size: 13px !important;border-radius: 50px !important;">Donate</a>
+</form>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<style>
+	.donate_btn {padding:12px 20px !important;}
+	@media (min-width: 1200px) {
+		.navbar-expand-xl .navbar-nav .nav-link {
+			padding-right: 0.2rem;
+			padding-left: .2rem;
+		}
+	}
+</style>
+<script>
+	$(window).scroll(function() {
+		if ($(window).scrollTop() >= 100) {
+			$('header').addClass('fixed-header');
+		} else {
+			$('header').removeClass('fixed-header');
+		}
+	});
+
+	var btn = document.querySelector('.toggle');
+	var btnst = true;
+	btn.onclick = function() {
+		if (btnst == true) {
+			document.querySelector('.toggle span').classList.add('toggle');
+			document.getElementById('sidebar').classList.add('sidebarshow');
+			btnst = false;
+		} else if (btnst == false) {
+			document.querySelector('.toggle span').classList.remove('toggle');
+			document.getElementById('sidebar').classList.remove('sidebarshow');
+			btnst = true;
+		}
+	}
+
+	function cancelsidebar() {
+		if (btnst == false) {
+			document.querySelector('.toggle span').classList.remove('toggle');
+			document.getElementById('sidebar').classList.remove('sidebarshow');
+			btnst = true;
+		}
+	}
+</script> </header>
+<main class="site-main">
+<!-- Inner Banner html start-->
+<div class="container-fluid">
+<div class="row">
+<div class="inner_header" style="background-image: url('https://www.hsmtemple.com/upload/seourl/headerimage/Dieties.jpeg?V=59');">
+<div class="innerhead_wrap">
+<h1>Deities At Our Temples</h1>
+</div>
+</div>
+</div>
+</div> <!-- <style>
+#< ?php echo $sectiondivID?> p a {color:< ?php if($sectionResult->linkColor == 1) { echo $sectionResult->linkColorCustom; } else { echo '#003F54'; }?> !important;}
+#< ?php echo $sectiondivID?> p a:hover {color:< ?php if($sectionResult->linkHoverColor == 1) { echo $sectionResult->linkHoverColorCustom; } else { echo $sectionResult->linkHoverColor; }?>  !important;}
+</style> -->
+<section class="section-content" id="section_157">
+<div class="overview section-50-py #0000FF sectionmargin" data-wow-duration="0.5s" id="deities-at-our-temples" style=" background-image:url(https://www.hsmtemple.com/upload/category/Bg_l01.png) !important; color:#000000;">
+<div class="container">
+<div class="row">
+<div class="col-lg-7 col-sm-12 col-sm-12">
+<div class="about_wrap template_left_wrap">
+<h2 class="animate__animated animate__fadeInRight mb-3" style="color: #212529!important;">Deities at our Temples</h2>
+<div class="my-3">
+<p class="animate__animated animate__fadeInRight" style="font-family: Roboto!important; font-weight: 400!important; font-size: 16px!important; line-height: 1.8!important; color: #202020!important;">As a universal concept Hinduism accepts all formulations of Truth, according to the universal view there is only one reality, but no particular name shape or form can adequately describe that Reality. Though truth is one it is also universal, not an exclusive formulation It is an inclusive Oneness – a spiritual reality of the Supreme Being – Consciousness – Bliss, which could be called God but which transcends all names and forms. The different Gods and Goddesses of Hinduism represent various functions of this One Supreme Divinity, and they are not separate Gods. Acceptance of other faiths, tolerance and pluralism are obvious corollaries to this great socio-religious principle of antiquity, Around the 6th century BC, the great Hindu philosopher, Adi Shankara grouped the various forms of worship in Sanatana Dharma (Eternal code of conduct, Hinduism) into six sects (Shanmathas). </p>
+</div>
+</div> </div>
+<div class="col-lg-5 col-sm-12">
+<div class="about_wrap mt-5">
+<div class="side-by">
+<div class="icon-list-content text-center">
+<div class="my-3">
+<div class="iconbox-border">
+<div class="my-3">
+<ul>
+<li>
+<div class="icon"><img alt="" height="18" src="assets\svgviewer-png-output.png" width="18"/></div>
+<div class="list_text">The devotion to Lord Vishnu.</div>
+</li>
+<li>
+<div class="icon"><img alt="" height="18" src="assets\svgviewer-png-output.png" width="18"/></div>
+<div class="list_text">The devotion to the Sun God, or Fire.</div>
+</li>
+<li>
+<div class="icon"><img alt="" height="18" src="assets\svgviewer-png-output.png" width="18"/></div>
+<div class="list_text">The devotion to Sri Shakti (Durgaji).</div>
+</li>
+<li>
+<div class="icon"><img alt="" height="18" src="assets\svgviewer-png-output.png" width="18"/></div>
+<div class="list_text">The devotion to Lord Kartikeya</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div> </div>
+</div>
+</div>
+</div>
+</section><!-- <style>
+#< ?php echo $sectiondivID?> p a {color:< ?php if($sectionResult->linkColor == 1) { echo $sectionResult->linkColorCustom; } else { echo '#003F54'; }?> !important;}
+#< ?php echo $sectiondivID?> p a:hover {color:< ?php if($sectionResult->linkHoverColor == 1) { echo $sectionResult->linkHoverColorCustom; } else { echo $sectionResult->linkHoverColor; }?>  !important;}
+</style> -->
+<section class="dynimic_section_content #0000FF wow fadeInLeft animated" data-wow-duration="0.5s" id="deities-at-our-temples" style="background:none  !important; color:#000000;">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 col-sm-12">
+<div class="bodytext">
+<h2 class="evernt_tittel" style="text-align: center;"><a href="#"> Hindu Temple and Dr. Raj Pandey Hindu Centre </a></h2> </div>
+</div>
+</div>
+</div>
+</section>
+<!-- <style>
+#< ?php echo $sectiondivID?> p a {color:< ?php if($sectionResult->linkColor == 1) { echo $sectionResult->linkColorCustom; } else { echo '#003F54'; }?> !important;}
+#< ?php echo $sectiondivID?> p a:hover {color:< ?php if($sectionResult->linkHoverColor == 1) { echo $sectionResult->linkHoverColorCustom; } else { echo $sectionResult->linkHoverColor; }?>  !important;}
+</style> -->
+<section class="section-content" id="section_191">
+<div !important;="" class="overview #0000FF wow lightSpeedIn" color:#000000;"="" data-wow-duration="0.5s" id="deities-at-our-temples" style="background-image:url(https://www.hsmtemple.com/upload/category/Bg_r02.png)">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-sm-12 col-sm-12 pt-4 pb-4">
+<p><img alt="" class="editor_img" src="assets\THC-G8.jpg"/></p> </div>
+<div class="col-lg-9 col-sm-12 pt-4 pb-4">
+<div class="about_wrap template_left_wrap">
+<h3 class="animate__animated animate__fadeInRight mb-3" style="color: #363e5a;">Sri Ganesha</h3>
+<p class="animate__animated animate__fadeInRight" style="font-family: Roboto!important; font-weight: 400!important; font-size: 16px!important; line-height: 1.8!important; color: #202020!important;">Lord Ganesha is worshiped by Hindus in all regions as the prime deity, Every ritual begins with a prayer and a pooja offering to Sri Ganesha. He is the Ishwara of the multitudes (GANA), Ganapati- the Lord of the GANA; Vinaharta – the remover of all obstacles in the proper conduct of the Dharma; Siddhi Vinayaka – the leader who guides us in attaining our goals, prodding us towards completion of all our tasks through proper conduct of our spiritual life, In one hand He holds a hook to prod us on our path to righteousness.The Lord of obstacles, Sri Vighneswara, has four arms representing four-inner- equipment (antakarana), The significance of the symbols in each hand is as follows: With the axe, He cuts off all the attachments of the devotees and thus ends their misery. With the rope, lie pulls them nearer and nearer to the Ultimate Truth and ties them to the Highest Goal. The modhaka (sweet) in the third hand represents the reward of the joys of sadhana,With the other hand, He blesses all his devotees and protects them from all obstacles, The broken tusk reminds us the familiar mythological episode of Vinayaka taking down notes of Mahabharata with one half of his tusk as Sage Vyasa dictated the great Epic Poem.</p>
+</div> </div>
+</div>
+</div>
+</div>
+</section><!-- <style>
+#< ?php echo $sectiondivID?> p a {color:< ?php if($sectionResult->linkColor == 1) { echo $sectionResult->linkColorCustom; } else { echo '#003F54'; }?> !important;}
+#< ?php echo $sectiondivID?> p a:hover {color:< ?php if($sectionResult->linkHoverColor == 1) { echo $sectionResult->linkHoverColorCustom; } else { echo $sectionResult->linkHoverColor; }?>  !important;}
+</style> -->
+<section class="section-content" id="section_192">
+<div class="overview #0000FF wow lightSpeedIn" data-wow-duration="0.5s" id="deities-at-our-temples" style=" background-image:url(https://www.hsmtemple.com/upload/category/Bg_l01.png) !important; color:#000000;">
+<div class="container">
+<div class="row">
+<div class="col-lg-9 col-sm-12 col-sm-12 pt-4 pb-4">
+<div class="about_wrap template_left_wrap">
+<h3 class="animate__animated animate__fadeInRight mb-3" style="color: #363e5a;">Sri Lakshmi Narayana</h3>
+<p class="animate__animated animate__fadeInRight" style="font-family: Roboto!important; font-weight: 400!important; font-size: 16px!important; line-height: 1.8!important; color: #202020!important;">Lord Narayana (or Vishnu) is one of the principal Hindu deities, worshiped as the protector and preserver of the world and restorer of (moral order). He is known chiefly through h,is avatars (incarnations), particularly Rama and Krishna. In theory, Vishnu manifests a portion of himself anytime he is needed to fight evil, and his appearances are innumerable; but in practice, ten incarnations are most commonly recognized. Lord holds a Chakra (discus) in one hand denoting that he maintains Dharma (righteousness) and order in the universe. The SLIANEHA (conch), the sound symbol that he holds in the other hand, symbolic of the NADA BRAHMAN (music of the cosmos) is to remove all ignorance. The GADA (mace) is to eliminate all evil in the world and the LOTUS is the symbol of beauty, purity, serenity and perfection – the cosmic universe. The beloved wife of Sri Narayana is Sri Lakshmi, Mother Lakshmi is always identified with the Lord, and hence they are known as Sri Lakshmi Narayana. Mother Lakshmi is a mother of prosperity, peace and illumination, without her grace, one can’t have inner peace or perennial joy. Other names &amp; manifestations of Lord Narayana are Vishnu, Parandama and Vasudev.</p>
+</div> </div>
+<div class="col-lg-3 col-sm-12 pt-4 pb-4">
+<p><img alt="" class="editor_img" src="assets\Sri%20Lakshmi%20Narayana.jpg"/></p> </div>
+</div>
+</div>
+</div>
+</section><!-- <style>
+#< ?php echo $sectiondivID?> p a {color:< ?php if($sectionResult->linkColor == 1) { echo $sectionResult->linkColorCustom; } else { echo '#003F54'; }?> !important;}
+#< ?php echo $sectiondivID?> p a:hover {color:< ?php if($sectionResult->linkHoverColor == 1) { echo $sectionResult->linkHoverColorCustom; } else { echo $sectionResult->linkHoverColor; }?>  !important;}
+</style> -->
+<section class="section-content" id="section_193">
+<div !important;="" class="overview #0000FF wow lightSpeedIn" color:#000000;"="" data-wow-duration="0.5s" id="deities-at-our-temples" style="background-image:url(https://www.hsmtemple.com/upload/category/Bg_r01.png)">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-sm-12 col-sm-12 pt-4 pb-4">
+<p><img alt="" class="editor_img" src="assets\THC-S.jpg"/></p> </div>
+<div class="col-lg-9 col-sm-12 pt-4 pb-4">
+<div class="about_wrap template_left_wrap">
+<h3 class="animate__animated animate__fadeInRight mb-3" style="color: #363e5a;">Lord Shiva, Linga and Nandi</h3>
+<p class="animate__animated animate__fadeInRight" style="font-family: Roboto!important; font-weight: 400!important; font-size: 16px!important; line-height: 1.8!important; color: #202020!important;">Shiva is one of the gods of the Trinity. He is said to be the god of destruction, Shiva is believed to be at the core of the centrifugal force of the universe, because of his responsibility for death .and destruction, But Shiva dissolves in order to .create, since death is the medium for rebirth into a new life. So the opposites of life and death and creation and destruction both reside in his character. Shiva, in his abstract form, is worshiped as Linga. Other names &amp; manifestations of Lord Siva: Nataraja, Dakshinamurthi ,Lingodhbava, Haryardhamurthi , Ardhanareeswara and Parameshwara.</p>
+</div> </div>
+</div>
+</div>
+</div>
+</section><!-- <style>
+#< ?php echo $sectiondivID?> p a {color:< ?php if($sectionResult->linkColor == 1) { echo $sectionResult->linkColorCustom; } else { echo '#003F54'; }?> !important;}
+#< ?php echo $sectiondivID?> p a:hover {color:< ?php if($sectionResult->linkHoverColor == 1) { echo $sectionResult->linkHoverColorCustom; } else { echo $sectionResult->linkHoverColor; }?>  !important;}
+</style> -->
+<section class="section-content" id="section_194">
+<div class="overview #0000FF wow lightSpeedIn" data-wow-duration="0.5s" id="deities-at-our-temples" style=" background-image:url(https://www.hsmtemple.com/upload/category/Bg_r01.png) !important; color:#000000;">
+<div class="container">
+<div class="row">
+<div class="col-lg-9 col-sm-12 col-sm-12 pt-4 pb-4">
+<div class="about_wrap template_left_wrap">
+<h3 class="animate__animated animate__fadeInRight mb-3" style="color: #363e5a;">Sri Ram Parivar</h3>
+<p class="animate__animated animate__fadeInRight" style="font-family: Roboto!important; font-weight: 400!important; font-size: 16px!important; line-height: 1.8!important; color: #202020!important;">Rama is one of the most commonly adored gods of Hindus and is known as an ideal man and hero of the epic Ramayana. He is always holding a bow and arrow indicating his readiness to destroy evils. He is also called “Shri Ram”. More commonly he is pictured in a family style, (Ram Parivar) with his wife Sita, brother Lakshman and devotee Hanuman who is sitting near Lord Rama’s feet. Lord Rama is considered as the Sixth incarnation of Vishnu and is thought of as an ideal example for mankind to follow. Unlike other avatars, Rama acted like a human, followed the cannons of law laid for humans and was a living embodiment of Dharma (Ramo vigrahavan dharmaha), His kingdom. called Ramarajya is still considered to be an excellent model of spiritual democracy.</p>
+</div> </div>
+<div class="col-lg-3 col-sm-12 pt-4 pb-4">
+<p><img alt="" class="editor_img" src="assets\THC-RS4.jpg"/></p> </div>
+</div>
+</div>
+</div>
+</section><!-- <style>
+#< ?php echo $sectiondivID?> p a {color:< ?php if($sectionResult->linkColor == 1) { echo $sectionResult->linkColorCustom; } else { echo '#003F54'; }?> !important;}
+#< ?php echo $sectiondivID?> p a:hover {color:< ?php if($sectionResult->linkHoverColor == 1) { echo $sectionResult->linkHoverColorCustom; } else { echo $sectionResult->linkHoverColor; }?>  !important;}
+</style> -->
+<section class="section-content" id="section_197">
+<div !important;="" class="overview #0000FF wow lightSpeedIn" color:#000000;"="" data-wow-duration="0.5s" id="deities-at-our-temples" style="background-image:url(https://www.hsmtemple.com/upload/category/Bg_l01.png)">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-sm-12 col-sm-12 pt-4 pb-4">
+<p><img alt="" class="editor_img" height="1045" src="assets\THC-G10.jpg" width="1315"/></p> </div>
+<div class="col-lg-9 col-sm-12 pt-4 pb-4">
+<div class="about_wrap template_left_wrap">
+<h3 class="animate__animated animate__fadeInRight mb-3" style="color: #363e5a;">Lord Kartikeya</h3>
+<p class="animate__animated animate__fadeInRight" style="font-family: Roboto!important; font-weight: 400!important; font-size: 16px!important; line-height: 1.8!important; color: #202020!important;">Kartikeya or Murugan. as the Tamil people affectionately call him, is the second son of Lord Shiva and Goddess Parvati. The sloka OM SARAVANABAVA describes him as an absolute Being. Lord Subramania is called Aum kara pranava swarooban, He is the embodiment of Aum and he explained the meaning of Aum to his father, Lord Shiva, at Swamimalai, South India. Hence he is called Swaminathan (Lord of Swami). By being the personification of Aum, Lord Subramania represents Brahma, Vishnu, and Maheshwara, Lord Subramania has two consorts, Deivayanai representing Kriya sakthi (duty) and Valli representing Icha sakthi (desire) and he himself representing Gnana sakthi (knowledge) and righteousness and thus protects Dharma by destroying the evil. While Ganesh removes obstacles Murugan bestows all spiritual powers, particularly the power of knowledge. The most popular and desirable form of worship of Lord Subramania is as Pranava Swarooban accompanied by the two sakthis. His vehicle which is the peacock symbolizes ego which is conquered for spiritual elevation, The popular worship of Shiva in the north of India and Murugan (who is his youngest son) in the South of India bridges the nation as one family. In fact, Kaumaram representing the devotion to Lord Murugan, is one of the six subsects of Hinduism, As an embodiment of knowledge, Kumaran is said to have expounded the meaning of the PRANAVA MANTRA to his father Lord Shiva himself.</p>
+</div> </div>
+</div>
+</div>
+</div>
+</section><!-- <style>
+#< ?php echo $sectiondivID?> p a {color:< ?php if($sectionResult->linkColor == 1) { echo $sectionResult->linkColorCustom; } else { echo '#003F54'; }?> !important;}
+#< ?php echo $sectiondivID?> p a:hover {color:< ?php if($sectionResult->linkHoverColor == 1) { echo $sectionResult->linkHoverColorCustom; } else { echo $sectionResult->linkHoverColor; }?>  !important;}
+</style> -->
+<section class="section-content" id="section_195">
+<div class="overview #0000FF wow lightSpeedIn" data-wow-duration="0.5s" id="deities-at-our-temples" style=" background-image:url(https://www.hsmtemple.com/upload/category/Bg_l01.png) !important; color:#000000;">
+<div class="container">
+<div class="row">
+<div class="col-lg-9 col-sm-12 col-sm-12 pt-4 pb-4">
+<div class="about_wrap template_left_wrap">
+<h3 class="animate__animated animate__fadeInRight mb-3" style="color: #363e5a;">Sri Radha Krishna</h3>
+<p class="animate__animated animate__fadeInRight" style="font-family: Roboto!important; font-weight: 400!important; font-size: 16px!important; line-height: 1.8!important; color: #202020!important;">Because of his great Godly power, Lord Krishna is another of the most commonly worshipped deities in the Hindu faith. He is considered to be the eighth avatar of Lord Vishnu. Lord Krishna is usually depicted as playing the flute (venn or murali), indicating spread of the melody of love to people. He is also shown with his childhood devotee Radha. The Lord is usually remembered and worshipped as Radha- Krishna. The pair symbolizes the eternal love between people and God. It was Lord Krishna who declared “The Supreme Lord descends from time lo time in this material world to re-establish the teachings of the Vedas” In His Bhagavad Gita Lord Krishna promises: “Whenever and wherever there is a decline in religious practice, O descendant of Bharata, and a predominant rise of irreligion – at that time I descend Myself. To deliver the pious and to annihilate the miscreants, as well as to re-establish the principles of religion, I myself appear millennium after millennium.</p>
+</div> </div>
+<div class="col-lg-3 col-sm-12 pt-4 pb-4">
+<p><img alt="" class="editor_img" src="assets\THC-RK.jpg"/></p> </div>
+</div>
+</div>
+</div>
+</section><!-- <style>
+#< ?php echo $sectiondivID?> p a {color:< ?php if($sectionResult->linkColor == 1) { echo $sectionResult->linkColorCustom; } else { echo '#003F54'; }?> !important;}
+#< ?php echo $sectiondivID?> p a:hover {color:< ?php if($sectionResult->linkHoverColor == 1) { echo $sectionResult->linkHoverColorCustom; } else { echo $sectionResult->linkHoverColor; }?>  !important;}
+</style> -->
+<section class="section-content" id="section_198">
+<div !important;="" class="overview #0000FF wow lightSpeedIn" color:#000000;"="" data-wow-duration="0.5s" id="deities-at-our-temples" style="background-image:url(https://www.hsmtemple.com/upload/category/Bg_r01.png)">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-sm-12 col-sm-12 pt-4 pb-4">
+<p><img alt="" class="editor_img" src="assets\THC-G13.jpg"/></p> </div>
+<div class="col-lg-9 col-sm-12 pt-4 pb-4">
+<div class="about_wrap template_left_wrap">
+<h3 class="animate__animated animate__fadeInRight mb-3" style="color: #363e5a;">Shri Mahavir Bhagwan</h3>
+<p class="animate__animated animate__fadeInRight" style="font-family: Roboto!important; font-weight: 400!important; font-size: 16px!important; line-height: 1.8!important; color: #202020!important;">Sri Mahavir was the last Tirthankara of the Jain religion. According to Jain philosophy, all Tirthankaras were born as human beings but they have attained a state of perfection or enlightenment through meditation and self realization. They, are the Gods of Jains, Tirthankara – One who establishes the four fold order (Monk, Nun, Layman, and Laywoman) of religion. Jina – One who conquers his inner enemies like anger, greed, passion, ego, etc. The followers of Jina are known as Jains. The spiritual power and moral grandeur of Mahavir’s teachings impressed the masses. He made religion simple and natural, free from elaborate ritual complexities. His message of nonviolence (Ahimsa), truth (Satya), non-stealing Achaurya), celibacy (Brahma-charya), and non- possession (Aparigraha) is full of universal compassion. He said that, “A living body is not merely an integration of limbs and flesh but it is the abode of the soul which potentially has perfect perception (Anant-darshana), perfect knowledge (Anant-jnana), perfect power (Anant-virya), and perfect bliss (Anant-sukha)”. Sri Mahavir’s message reflects freedom and spiritual joy of the living being.</p>
+</div> </div>
+</div>
+</div>
+</div>
+</section><!-- <style>
+#< ?php echo $sectiondivID?> p a {color:< ?php if($sectionResult->linkColor == 1) { echo $sectionResult->linkColorCustom; } else { echo '#003F54'; }?> !important;}
+#< ?php echo $sectiondivID?> p a:hover {color:< ?php if($sectionResult->linkHoverColor == 1) { echo $sectionResult->linkHoverColorCustom; } else { echo $sectionResult->linkHoverColor; }?>  !important;}
+</style> -->
+<section class="section-content" id="section_199">
+<div class="overview #0000FF wow lightSpeedIn" data-wow-duration="0.5s" id="deities-at-our-temples" style=" background-image:url(https://www.hsmtemple.com/upload/category/Bg_l01.png) !important; color:#000000;">
+<div class="container">
+<div class="row">
+<div class="col-lg-9 col-sm-12 col-sm-12 pt-4 pb-4">
+<div class="about_wrap template_left_wrap">
+<h3 class="animate__animated animate__fadeInRight mb-3" style="color: #363e5a;">Sri Swaminarayan</h3>
+<p class="animate__animated animate__fadeInRight" style="font-family: Roboto!important; font-weight: 400!important; font-size: 16px!important; line-height: 1.8!important; color: #202020!important;">Bhagwan Swaminarayan’s life and work has not only influenced communities in Gujarat, India but has affected change throughout the world. He reestablished Hindu Sanatan Dharma, cleansing traditions and rituals of the impurities that had seeped in over time. His contributions have been hailed by Hindus and dignitaries of other faiths as truly transforming the lives of millions of individuals. He improved societal standards and, most importantly, the innate nature of people, eradicating them of lust, anger, greed, and envy. Bhagwan Swaminarayan was not a mere social worker; He was God incarnate. Bhagwan Swaminarayan did not simply reform society; He spiritually charged it with faith, virtue, and integrity. His life and work speak for themselves..</p>
+</div> </div>
+<div class="col-lg-3 col-sm-12 pt-4 pb-4">
+<p><img alt="" class="editor_img" src="assets\THC-SN1.jpg"/></p> </div>
+</div>
+</div>
+</div>
+</section><!-- <style>
+#< ?php echo $sectiondivID?> p a {color:< ?php if($sectionResult->linkColor == 1) { echo $sectionResult->linkColorCustom; } else { echo '#003F54'; }?> !important;}
+#< ?php echo $sectiondivID?> p a:hover {color:< ?php if($sectionResult->linkHoverColor == 1) { echo $sectionResult->linkHoverColorCustom; } else { echo $sectionResult->linkHoverColor; }?>  !important;}
+</style> -->
+<section class="dynimic_section_content #0000FF wow fadeInLeft animated" data-wow-duration="0.5s" id="deities-at-our-temples" style="background:none  !important; color:#000000;">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 col-sm-12">
+<div class="bodytext">
+<h2 class="evernt_tittel" id="#hindu-temple" style="text-align: center;"><a href="#"> Hindu Temple and Cultural Centre </a></h2> </div>
+</div>
+</div>
+</div>
+</section>
+<!-- <style>
+#< ?php echo $sectiondivID?> p a {color:< ?php if($sectionResult->linkColor == 1) { echo $sectionResult->linkColorCustom; } else { echo '#003F54'; }?> !important;}
+#< ?php echo $sectiondivID?> p a:hover {color:< ?php if($sectionResult->linkHoverColor == 1) { echo $sectionResult->linkHoverColorCustom; } else { echo $sectionResult->linkHoverColor; }?>  !important;}
+</style> -->
+<section class="section-content" id="section_196">
+<div !important;="" class="overview #0000FF wow lightSpeedIn" color:#000000;"="" data-wow-duration="0.5s" id="deities-at-our-temples" style="background-image:url(https://www.hsmtemple.com/upload/category/Bg_r01.png)">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-sm-12 col-sm-12 pt-4 pb-4">
+<p><img alt="" class="editor_img" src="assets\TCC-G26.jpg"/></p> </div>
+<div class="col-lg-9 col-sm-12 pt-4 pb-4">
+<div class="about_wrap template_left_wrap">
+<h3 class="animate__animated animate__fadeInRight mb-3" style="color: #363e5a;">Sri Hanumanji (Anjaneya)</h3>
+<p class="animate__animated animate__fadeInRight" style="font-family: Roboto!important; font-weight: 400!important; font-size: 16px!important; line-height: 1.8!important; color: #202020!important;">Hanuman is one of the most popular God of Hindus, People from all walks of life worship him and admire him, As a devotee of Lord Rama, he has become very popular for his devotion and great qualities. Like Ganesha he commands respect and veneration from children and elders alike. Any one who is familiar with the Ramayana, cannot but appreciate his divine nature and super human personality, shaped by the strength of celibacy, humility, selflessness, unsurpassed devotion, determination, fearlessness and an extraordinary commitment to work for the divine. His temples are found everywhere in India, in towns and cities, on the hills, in the forests and most difficult places. Sita found in him a friend. a son and a loyal servant. Impressed by his loyalty and commitment to the cause of Rama, she blessed him to remain immortal in his existing form till the end of creation and help the loyal devotees of Rama.</p>
+</div> </div>
+</div>
+</div>
+</div>
+</section><!-- <style>
+#< ?php echo $sectiondivID?> p a {color:< ?php if($sectionResult->linkColor == 1) { echo $sectionResult->linkColorCustom; } else { echo '#003F54'; }?> !important;}
+#< ?php echo $sectiondivID?> p a:hover {color:< ?php if($sectionResult->linkHoverColor == 1) { echo $sectionResult->linkHoverColorCustom; } else { echo $sectionResult->linkHoverColor; }?>  !important;}
+</style> -->
+<section class="section-content" id="section_161">
+<div class="overview #0000FF wow lightSpeedIn" data-wow-duration="0.5s" id="deities-at-our-temples" style=" background-image:url(https://www.hsmtemple.com/upload/category/Bg_l01.png) !important; color:#000000;">
+<div class="container">
+<div class="row">
+<div class="col-lg-9 col-sm-12 col-sm-12 pt-4 pb-4">
+<div class="about_wrap template_left_wrap">
+<h3 class="animate__animated animate__fadeInRight mb-3" style="color: #363e5a;">Maa Durga</h3>
+<p class="animate__animated animate__fadeInRight" style="font-family: Roboto!important; font-weight: 400!important; font-size: 16px!important; line-height: 1.8!important; color: #202020!important;">The Goddess Durga, also known as Parvati is the wife of Lord Shiva, Parvati represents prakriti or nature, which means perishable matter, in the absence of which true and complete destruction by Shiva becomes impossible. (As we are all aware of today, only biodegradable matter can be destroyed). This could possibly he the meaning of the idea that Shiva becomes nothing in the absence of Shakti, Durga has two famous sons, Kartikeya and Ganesh. Durga exists in various divine forms, One of her most fiercely powerful forms is Kali (goddess of destruction). Other names and manifestations of Durgaji: Parvati, Ulna, Ardhanareeswari, Parameshwari, Kali, Mariamman Maa.</p>
+</div> </div>
+<div class="col-lg-3 col-sm-12 pt-4 pb-4">
+<p><img alt="" height="259" src="assets\TCC-G18.jpg" width="300"/></p> </div>
+</div>
+</div>
+</div>
+</section> </main>
+<div class="container-fluid" data-aos="zoom-in">
+<div class="row">
+<div class="newslatter_details">
+<div class="container containerfot text-center">
+<div class="row">
+<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+<div class="newslatter_wrap">
+<p>Newsletter</p>
+<h2>Subscribe For Updates</h2>
+<div class="my-3">
+<span>
+<p>Subscribe to our newsletters for latest event and updates about HSM initiatives</p>
+</span>
+</div>
+</div>
+<div class="wdt-newslatter-wrapper" id="#newsletter">
+<script>
+    $(".alert").fadeTo(8000, 8000).slideUp(8000, function() {
+        $(".alert").slideUp(8000);
+    });
+</script> <form action="https://www.hsmtemple.com/action/newsletter" class="newslatter-subscribe-form" id="frm_newsletter" method="post" name="frm_newsletter">
+<input class="form-control" name="backTo" type="hidden" value="home"/>
+<div class="news">
+<div class="m-3">
+<input maxlength="30" name="subscriberEmail" placeholder="Your email address" type="text"/>
+<label class="error" for="subscriberEmail" generated="true"></label>
+</div>
+<div class="m-2">
+<div class="g-recaptcha" data-sitekey="6LemX6YpAAAAADtO3mPCsdmaBHF8froG-0cgf8Os" id="recaptcha1"></div>
+<div id="gcaptchamsg" style="color:red; font-size: 13px;"></div>
+<label style="width:100%;"><label class="error" for="gRecaptchaResponse" generated="true"></label></label>
+<div class="contactusCaptchaMsg"></div>
+<input class="gRecaptchaResponse required" id="gRecaptchaResponse" name="gRecaptchaResponse" type="hidden"/>
+<label class="error" for="g-recaptcha" generated="true"></label>
+</div>
+<div class="m-3">
+<div class="newslatter-subscription-button-holder">
+<button class="donate_btn" name="wdt_mc_submit" type="submit">
+<span>Subscribe</span> <i aria-hidden="true" class="fas fa-arrow-right"></i>
+</button>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+<!-- <div class="col-12 col-sm-12 col-md-4 col-lg-3"></div> -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- END NEWS LATTER --> <style type="text/css">
+	.footer_logo img {
+    width: 120px;
+    height: auto;
+}
+</style>
+<!-- START FOOTER -->
+<div class="container-fluid p-0">
+<div class="footer_set">
+<div class="opacity_set"></div>
+<div class="container containerfot footer_bg_set white">
+<div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+<div class="col mb-4">
+<div class="footer_wrap">
+<div class="mb-10">
+<h2>Temple Hours</h2>
+</div>
+<div class="mb-3">
+<p><strong><span style="color: #34495e;">Hindu Temple &amp; Dr. Raj Pandey Hindu Centre</span></strong></p>
+<p>999 St. Anne’s Road, Winnipeg, MB, R2N 4G5.</p>
+<p>Mon-Sat : <br/>9:00am – 12:00pm | 10:00am – 12:00pm Puja <br/>6:00pm – 08:00pm</p>
+<p>Sunday :<span class="Apple-converted-space">  <br/></span>10:00 am – 7:00 pm</p> </div>
+<div class="mb-3">
+<p><strong><span style="color: #236fa1;">Hindu Temple &amp; Cultural Centre</span></strong></p>
+<p>854 Ellice Avenue, Winnipeg, MB, R3G 0C5.</p>
+<p>Mon - Sat: <br/>9:00 am – 11:00 am<span class="Apple-converted-space"><br/></span>6:00 pm – 08:00 pm</p>
+<p>Sunday : <br/>10:00am – 12:00pm<br/>Evening: Closed</p> </div>
+</div>
+</div>
+<div class="col mb-4">
+<div class="footer_wrap text-lg-center">
+<div class="footer_logo mb-10">
+<a href="https://www.hsmtemple.com/"><img alt="" src="assets\hsm-new-logo.svg"/></a>
+</div>
+<div class="text-lg-center">
+<p>
+<p>Our vision through this website is to facilitate communication, events planning and better implementation of our programs. We can accomplish a lot together as a community and this can add to our success in promoting Hindu religion and culture in Manitoba.</p> </p>
+</div>
+<div class="hsm">
+<ul class="hsm_iconset">
+<li>
+<a class="social-media" href="https://www.facebook.com/HinduSocietyOfManitoba/" target="_blank" title="Facebook">
+<i aria-hidden="true" class="fa-brands fa-facebook"></i>
+</a>
+</li>
+<li>
+<a class="social-media" href="https://www.youtube.com/@HSM-mw4ec" target="_blank" title="Youtube Channel">
+<i aria-hidden="true" class="fa-brands fa-youtube"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="footer_wrap footer_right">
+<div class="mb-10">
+<h2>Useful Links</h2>
+</div>
+<div class="usefull">
+<ul class="mobile">
+<li>
+<a href="https://www.hsmtemple.com/our-team"><span class="">Board Members</span></a>
+</li>
+<li>
+<a href="https://www.hsmtemple.com/booking"><span class="">Booking </span></a>
+</li>
+<li>
+<a href="https://www.hsmtemple.com/vidya-bhavan"><span class="">Vidya Bhavan </span></a>
+</li>
+<li>
+<a href="https://www.hsmtemple.com/product"><span class="">⁠Library </span></a>
+</li>
+<li>
+<a href="https://www.hsmtemple.com/our-event"><span class="">Events</span></a>
+</li>
+<li>
+<a href="https://www.hsmtemple.com/blog"><span class="">News and Blogs</span></a>
+</li>
+<li>
+<a href="https://www.hsmtemple.com/facilities-at-temples"><span class="">Facilities</span></a>
+</li>
+<li>
+<a href="https://www.hsmtemple.com/contact-us"><span class="">Contact Us</span></a>
+</li>
+<li hidden="" style="opacity:0">
+<a hidden="" href="https://www.hsmtemple.com/seo-clients" style="opacity:0"><span class="">Web Resources</span></a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div>
+<hr/>
+</div>
+<div class="copy_right">
+<div>©2025 Hindu Society of Manitoba. All Rights Reserved</div>
+<div><a href="https://www.hrinfocare.com/" style="color:white!important;" target="_blank">Developed By Hrinfocare - Web And Digital Marketing</a></div>
+</div>
+</div>
+</div>
+</div>
+<!-- END FOOTER -->
+<div class="modal testimonial-modal">
+<div class="modal-dialog modal-dialog-centered modal-lg">
+<div class="modal-content testimonialDetailDiv">
+</div>
+</div>
+</div>
+<!-- header html end -->
+<script type="text/javascript">
+	function fun_testimonialsDetail(testimonialsID) {
+		$("#loading").fadeIn(300);
+		$.ajax({
+			type: "POST",
+			url: "https://www.hsmtemple.com/ajax/testimonialsDetail",
+			data: "testimonialsID=" + testimonialsID,
+			success: function(result) {
+				$('.testimonial-modal').modal({
+					backdrop: 'static',
+					keyboard: false
+				});
+				$('.testimonial-modal').modal('show');
+				$('.testimonialDetailDiv').html(result);
+				$("#loading").fadeOut(300);
+			}
+		});
+	}
+</script>
+<script type="text/javascript">
+		$(document).ready(function () {
+        $.validator.setDefaults({
+            submitHandler: function () {
+                if (grecaptcha.getResponse() == '') {
+                    $.unblockUI();
+                } else {
+                    document.frm_newsletter.submit();
+                }
+            }
+        });
+
+        $("#frm_newsletter").validate({
+            rules: {
+                subscriberEmail: {
+                    required: true,
+                    email: true
+                },
+                gRecaptchaResponse: {
+                    required: true
+                },
+            },
+            messages: {
+                subscriberEmail: {
+                    required: "Please enter an email address.",
+                    email: "Please enter a valid email address."
+                },
+                gRecaptchaResponse: {
+                    required: "Please select a captcha."
+                },
+            }
+        });
+    });
+	</script>
+<link href="assets\aos.css" rel="stylesheet"/>
+<script src="assets\aos.js"></script>
+<script>
+  AOS.init({
+	easing: 'ease-in-out-sine'
+  });
+</script>
+<script rel="stylesheet" src="assets\bootstrap.bundle.min.js"></script>
+<script rel="stylesheet" src="assets\fontawesome.js"></script>
+<script rel="stylesheet" src="assets\wow.min.js"></script>
+</div>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9f60f089bcea9d3e',t:'MTc3NzgyODg2MA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
