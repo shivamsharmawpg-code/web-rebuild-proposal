@@ -1,0 +1,57 @@
+
+:root {
+  --bg-canvas: #f7f5f2;
+  --bg-panel: #ffffff;
+  --text-main: #1f2a37;
+  --text-soft: #5c6876;
+  --brand-main: #5b21b6;
+  --brand-warm: #c2410c;
+  --brand-calm: #0f766e;
+  --border-tone: #e7dfd3;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: var(--bg-canvas);
+  color: var(--text-main);
+}
+.wrapper { width: min(1100px, 92vw); margin: 0 auto; }
+.header {
+  position: sticky;
+  top: 0;
+  background: #fffdfa;
+  border-bottom: 1px solid var(--border-tone);
+}
+.header-inner {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.brandmark { font-weight: 800; }
+.menu-toggle { border: 1px solid var(--border-tone); background: #fff; border-radius: 8px; padding: .5rem .8rem; }
+.navlist { list-style: none; margin: 0; padding: 0; display: grid; gap: .4rem; }
+.navlist a { display:block; padding:.45rem .6rem; border-radius:8px; }
+.navlist a:hover,.navlist a:focus-visible { background:#f4eee6; outline:none; }
+.hero { padding: 2.6rem 0; }
+.layout { display: grid; gap: 1.25rem; }
+.kicker { text-transform: uppercase; font-size: .78rem; letter-spacing: .08em; color: var(--brand-calm); }
+h1 { margin: .5rem 0 .8rem; line-height: 1.2; }
+.actionset { display:flex; gap:.7rem; flex-wrap:wrap; }
+.button { border:1px solid var(--border-tone); border-radius:10px; padding:.7rem 1rem; background:#fff; font-weight:700; }
+.button.main { background: var(--brand-main); color:#fff; border-color:var(--brand-main); }
+.panel, .card { background: var(--bg-panel); border:1px solid var(--border-tone); border-radius:14px; padding:1rem; }
+.cards { display:grid; gap:1rem; }
+.note { border-left: 4px solid var(--brand-warm); background:#fff6ed; padding:1rem; border-radius:10px; }
+.formgrid { display:grid; gap:.8rem; }
+.formgrid input,.formgrid select,.formgrid textarea { width:100%; border:1px solid #d6dee8; border-radius:10px; padding:.65rem; font:inherit; }
+.footer { border-top:1px solid var(--border-tone); margin-top:2rem; padding:1.4rem 0; color:var(--text-soft); }
+@media (min-width: 900px) {
+  .menu-toggle { display:none; }
+  .site-nav { display:block !important; }
+  .navlist { display:flex; flex-wrap:wrap; }
+  .layout { grid-template-columns: 1.6fr 1fr; }
+  .cards.three { grid-template-columns: repeat(3, minmax(0,1fr)); }
+}
